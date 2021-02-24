@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  AppleLogin
+//  PlayerTransition
 //
 //  Created by OLEKSANDR SOKOLOV on 2/24/21.
 //

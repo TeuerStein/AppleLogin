@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B36D4DDC25E6E5C30050D7A6 /* AppleLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4DDB25E6E5C30050D7A6 /* AppleLoginApp.swift */; };
-		B36D4DDE25E6E5C30050D7A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4DDD25E6E5C30050D7A6 /* ContentView.swift */; };
-		B36D4DE025E6E5C50050D7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D4DDF25E6E5C50050D7A6 /* Assets.xcassets */; };
-		B36D4DE325E6E5C50050D7A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D4DE225E6E5C50050D7A6 /* Preview Assets.xcassets */; };
+		B36D4DF825E6F6860050D7A6 /* PlayerTransitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4DF725E6F6860050D7A6 /* PlayerTransitionApp.swift */; };
+		B36D4DFA25E6F6860050D7A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4DF925E6F6860050D7A6 /* ContentView.swift */; };
+		B36D4DFC25E6F6890050D7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D4DFB25E6F6890050D7A6 /* Assets.xcassets */; };
+		B36D4DFF25E6F6890050D7A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D4DFE25E6F6890050D7A6 /* Preview Assets.xcassets */; };
+		B36D4E0C25E710210050D7A6 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4E0B25E710210050D7A6 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B36D4DD825E6E5C30050D7A6 /* AppleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36D4DDB25E6E5C30050D7A6 /* AppleLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginApp.swift; sourceTree = "<group>"; };
-		B36D4DDD25E6E5C30050D7A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B36D4DDF25E6E5C50050D7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B36D4DE225E6E5C50050D7A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B36D4DE425E6E5C50050D7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36D4DF425E6F6860050D7A6 /* PlayerTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36D4DF725E6F6860050D7A6 /* PlayerTransitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTransitionApp.swift; sourceTree = "<group>"; };
+		B36D4DF925E6F6860050D7A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B36D4DFB25E6F6890050D7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B36D4DFE25E6F6890050D7A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B36D4E0025E6F6890050D7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36D4E0B25E710210050D7A6 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B36D4DD525E6E5C30050D7A6 /* Frameworks */ = {
+		B36D4DF125E6F6860050D7A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,77 +35,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B36D4DCF25E6E5C30050D7A6 = {
+		B36D4DEB25E6F6860050D7A6 = {
 			isa = PBXGroup;
 			children = (
-				B36D4DDA25E6E5C30050D7A6 /* AppleLogin */,
-				B36D4DD925E6E5C30050D7A6 /* Products */,
+				B36D4DF625E6F6860050D7A6 /* PlayerTransition */,
+				B36D4DF525E6F6860050D7A6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B36D4DD925E6E5C30050D7A6 /* Products */ = {
+		B36D4DF525E6F6860050D7A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B36D4DD825E6E5C30050D7A6 /* AppleLogin.app */,
+				B36D4DF425E6F6860050D7A6 /* PlayerTransition.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B36D4DDA25E6E5C30050D7A6 /* AppleLogin */ = {
+		B36D4DF625E6F6860050D7A6 /* PlayerTransition */ = {
 			isa = PBXGroup;
 			children = (
-				B36D4DDB25E6E5C30050D7A6 /* AppleLoginApp.swift */,
-				B36D4DDD25E6E5C30050D7A6 /* ContentView.swift */,
-				B36D4DDF25E6E5C50050D7A6 /* Assets.xcassets */,
-				B36D4DE425E6E5C50050D7A6 /* Info.plist */,
-				B36D4DE125E6E5C50050D7A6 /* Preview Content */,
+				B36D4E0A25E7100A0050D7A6 /* ViewModel */,
+				B36D4E0825E70FDF0050D7A6 /* View */,
+				B36D4E0725E70FD10050D7A6 /* Model */,
+				B36D4E0925E70FE70050D7A6 /* Files */,
+				B36D4DF725E6F6860050D7A6 /* PlayerTransitionApp.swift */,
+				B36D4DF925E6F6860050D7A6 /* ContentView.swift */,
+				B36D4DFB25E6F6890050D7A6 /* Assets.xcassets */,
+				B36D4E0025E6F6890050D7A6 /* Info.plist */,
+				B36D4DFD25E6F6890050D7A6 /* Preview Content */,
 			);
-			path = AppleLogin;
+			path = PlayerTransition;
 			sourceTree = "<group>";
 		};
-		B36D4DE125E6E5C50050D7A6 /* Preview Content */ = {
+		B36D4DFD25E6F6890050D7A6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B36D4DE225E6E5C50050D7A6 /* Preview Assets.xcassets */,
+				B36D4DFE25E6F6890050D7A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B36D4E0725E70FD10050D7A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B36D4E0B25E710210050D7A6 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B36D4E0825E70FDF0050D7A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B36D4E0925E70FE70050D7A6 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		B36D4E0A25E7100A0050D7A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B36D4DD725E6E5C30050D7A6 /* AppleLogin */ = {
+		B36D4DF325E6F6860050D7A6 /* PlayerTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B36D4DE725E6E5C50050D7A6 /* Build configuration list for PBXNativeTarget "AppleLogin" */;
+			buildConfigurationList = B36D4E0325E6F6890050D7A6 /* Build configuration list for PBXNativeTarget "PlayerTransition" */;
 			buildPhases = (
-				B36D4DD425E6E5C30050D7A6 /* Sources */,
-				B36D4DD525E6E5C30050D7A6 /* Frameworks */,
-				B36D4DD625E6E5C30050D7A6 /* Resources */,
+				B36D4DF025E6F6860050D7A6 /* Sources */,
+				B36D4DF125E6F6860050D7A6 /* Frameworks */,
+				B36D4DF225E6F6860050D7A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AppleLogin;
-			productName = AppleLogin;
-			productReference = B36D4DD825E6E5C30050D7A6 /* AppleLogin.app */;
+			name = PlayerTransition;
+			productName = PlayerTransition;
+			productReference = B36D4DF425E6F6860050D7A6 /* PlayerTransition.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B36D4DD025E6E5C30050D7A6 /* Project object */ = {
+		B36D4DEC25E6F6860050D7A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					B36D4DD725E6E5C30050D7A6 = {
+					B36D4DF325E6F6860050D7A6 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = B36D4DD325E6E5C30050D7A6 /* Build configuration list for PBXProject "AppleLogin" */;
+			buildConfigurationList = B36D4DEF25E6F6860050D7A6 /* Build configuration list for PBXProject "PlayerTransition" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +146,43 @@
 				en,
 				Base,
 			);
-			mainGroup = B36D4DCF25E6E5C30050D7A6;
-			productRefGroup = B36D4DD925E6E5C30050D7A6 /* Products */;
+			mainGroup = B36D4DEB25E6F6860050D7A6;
+			productRefGroup = B36D4DF525E6F6860050D7A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B36D4DD725E6E5C30050D7A6 /* AppleLogin */,
+				B36D4DF325E6F6860050D7A6 /* PlayerTransition */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B36D4DD625E6E5C30050D7A6 /* Resources */ = {
+		B36D4DF225E6F6860050D7A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36D4DE325E6E5C50050D7A6 /* Preview Assets.xcassets in Resources */,
-				B36D4DE025E6E5C50050D7A6 /* Assets.xcassets in Resources */,
+				B36D4DFF25E6F6890050D7A6 /* Preview Assets.xcassets in Resources */,
+				B36D4DFC25E6F6890050D7A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B36D4DD425E6E5C30050D7A6 /* Sources */ = {
+		B36D4DF025E6F6860050D7A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36D4DDE25E6E5C30050D7A6 /* ContentView.swift in Sources */,
-				B36D4DDC25E6E5C30050D7A6 /* AppleLoginApp.swift in Sources */,
+				B36D4DFA25E6F6860050D7A6 /* ContentView.swift in Sources */,
+				B36D4E0C25E710210050D7A6 /* Video.swift in Sources */,
+				B36D4DF825E6F6860050D7A6 /* PlayerTransitionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B36D4DE525E6E5C50050D7A6 /* Debug */ = {
+		B36D4E0125E6F6890050D7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		B36D4DE625E6E5C50050D7A6 /* Release */ = {
+		B36D4E0225E6F6890050D7A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,44 +298,44 @@
 			};
 			name = Release;
 		};
-		B36D4DE825E6E5C50050D7A6 /* Debug */ = {
+		B36D4E0425E6F6890050D7A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleLogin/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlayerTransition/Preview Content\"";
 				DEVELOPMENT_TEAM = DHD4365Q83;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AppleLogin/Info.plist;
+				INFOPLIST_FILE = PlayerTransition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TeuerStein.AppleLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeuerStein.PlayerTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B36D4DE925E6E5C50050D7A6 /* Release */ = {
+		B36D4E0525E6F6890050D7A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleLogin/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlayerTransition/Preview Content\"";
 				DEVELOPMENT_TEAM = DHD4365Q83;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AppleLogin/Info.plist;
+				INFOPLIST_FILE = PlayerTransition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.TeuerStein.AppleLogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeuerStein.PlayerTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B36D4DD325E6E5C30050D7A6 /* Build configuration list for PBXProject "AppleLogin" */ = {
+		B36D4DEF25E6F6860050D7A6 /* Build configuration list for PBXProject "PlayerTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B36D4DE525E6E5C50050D7A6 /* Debug */,
-				B36D4DE625E6E5C50050D7A6 /* Release */,
+				B36D4E0125E6F6890050D7A6 /* Debug */,
+				B36D4E0225E6F6890050D7A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B36D4DE725E6E5C50050D7A6 /* Build configuration list for PBXNativeTarget "AppleLogin" */ = {
+		B36D4E0325E6F6890050D7A6 /* Build configuration list for PBXNativeTarget "PlayerTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B36D4DE825E6E5C50050D7A6 /* Debug */,
-				B36D4DE925E6E5C50050D7A6 /* Release */,
+				B36D4E0425E6F6890050D7A6 /* Debug */,
+				B36D4E0525E6F6890050D7A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B36D4DD025E6E5C30050D7A6 /* Project object */;
+	rootObject = B36D4DEC25E6F6860050D7A6 /* Project object */;
 }
