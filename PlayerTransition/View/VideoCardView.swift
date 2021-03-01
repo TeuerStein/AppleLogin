@@ -10,11 +10,11 @@ import SwiftUI
 struct VideoCardView: View {
     var video: Video
     var body: some View {
-        VStack(spacing: -30) {
+        VStack(spacing: 0) {
             Image(video.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 250)
+                .frame(height: 190)
             
             HStack(spacing: 15) {
                 Image("logo")

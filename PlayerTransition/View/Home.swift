@@ -19,6 +19,8 @@ struct Home: View {
                     }
                 }
             }
+            
+            MiniPlayer()
         }
     }
 }
