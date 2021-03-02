@@ -26,6 +26,7 @@ struct VideoPlayerView: UIViewControllerRepresentable {
         // Hiding Controls
         controller.showsPlaybackControls = false
         controller.player?.play()
+        controller.videoGravity = .resizeAspectFill
         
         return controller
     }

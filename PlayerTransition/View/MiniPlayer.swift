@@ -16,20 +16,46 @@ struct MiniPlayer: View {
                 .frame(height: 250)
             
             GeometryReader { geometry in
-                VStack(spacing: 18) {
-                    // Video playback details and buttons
-                    
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("M1 MacBook Unboxing And First Impressions")
-                            .font(.callout)
+                ScrollView {
+                    VStack(spacing: 18) {
+                        // Video playback details and buttons
                         
-                        Text("1.2M Views")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                            .foregroundColor(.gray)
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("M1 MacBook Unboxing And First Impressions")
+                                .font(.callout)
+                            
+                            Text("1.2M Views")
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .foregroundColor(.gray)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        // Buttons
+                        HStack {
+                            PlayBackVideoButtons(image: "hand.thumbsub", text: "123K")
+                            
+                            PlayBackVideoButtons(image: "hand.thumbdown", text: "1K")
+                            
+                            PlayBackVideoButtons(image: "square.and.arrow.up", text: "Share")
+                            
+                            PlayBackVideoButtons(image: "square.and.arrow.down", text: "Download")
+                            
+                            PlayBackVideoButtons(image: "message", text: "Live Chat")
+                        }
+                        
+                        Divider()
+                        
+                        VStack(spacing: 15) {
+                            
+                            ForEach(videos) { video in
+                                
+                                VideoCardView(video: video)
+                            }
+                        }
                     }
+                    .padding()
                 }
-                .padding()
             }
             
             Spacer(minLength: 0)
@@ -44,5 +70,23 @@ struct MiniPlayer: View {
 struct MiniPlayer_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+    }
+}
+
+struct PlayBackVideoButtons: View {
+    var image: String
+    var text: String
+    
+    var body: some View {
+        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Image(systemName: image)
+                .font(.title3)
+            
+            Text(text)
+                .fontWeight(.semibold)
+                .font(.caption)
+        })
+        .foregroundColor(.black)
+        .frame(maxWidth: .infinity)
     }
 }
