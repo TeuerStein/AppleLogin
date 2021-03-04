@@ -12,8 +12,11 @@ struct MiniPlayer: View {
         VStack {
             
             // Video Player
-            VideoPlayerView()
-                .frame(height: 250)
+            // There is a bug with URL path for video player
+            // For that I use an Image
+            Image("video")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             
             GeometryReader { geometry in
                 ScrollView {
@@ -33,9 +36,9 @@ struct MiniPlayer: View {
                         
                         // Buttons
                         HStack {
-                            PlayBackVideoButtons(image: "hand.thumbsub", text: "123K")
+                            PlayBackVideoButtons(image: "hand.thumbsup", text: "123K")
                             
-                            PlayBackVideoButtons(image: "hand.thumbdown", text: "1K")
+                            PlayBackVideoButtons(image: "hand.thumbsdown", text: "1K")
                             
                             PlayBackVideoButtons(image: "square.and.arrow.up", text: "Share")
                             
@@ -43,6 +46,8 @@ struct MiniPlayer: View {
                             
                             PlayBackVideoButtons(image: "message", text: "Live Chat")
                         }
+                        .frame(maxWidth: .infinity)
+                        .edgesIgnoringSafeArea(.horizontal)
                         
                         Divider()
                         
@@ -60,6 +65,7 @@ struct MiniPlayer: View {
             
             Spacer(minLength: 0)
         }
+        .edgesIgnoringSafeArea(.all)
         .background(
             Color.white
                 .ignoresSafeArea(.all, edges: .all)
@@ -79,12 +85,14 @@ struct PlayBackVideoButtons: View {
     
     var body: some View {
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-            Image(systemName: image)
-                .font(.title3)
-            
-            Text(text)
-                .fontWeight(.semibold)
-                .font(.caption)
+            VStack(spacing: 8) {
+                Image(systemName: image)
+                    .font(.title3)
+                
+                Text(text)
+                    .fontWeight(.semibold)
+                    .font(.caption)
+            }
         })
         .foregroundColor(.black)
         .frame(maxWidth: .infinity)
