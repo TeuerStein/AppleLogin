@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3244D2625F39E270096A820 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3244D2525F39E270096A820 /* VideoPlayerViewModel.swift */; };
 		B36D4DF825E6F6860050D7A6 /* PlayerTransitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4DF725E6F6860050D7A6 /* PlayerTransitionApp.swift */; };
 		B36D4DFA25E6F6860050D7A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36D4DF925E6F6860050D7A6 /* ContentView.swift */; };
 		B36D4DFC25E6F6890050D7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36D4DFB25E6F6890050D7A6 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3244D2525F39E270096A820 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		B36D4DF425E6F6860050D7A6 /* PlayerTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36D4DF725E6F6860050D7A6 /* PlayerTransitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTransitionApp.swift; sourceTree = "<group>"; };
 		B36D4DF925E6F6860050D7A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		B36D4E0A25E7100A0050D7A6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B3244D2525F39E270096A820 /* VideoPlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				B36D4E1325E712B30050D7A6 /* Home.swift in Sources */,
 				B3955BAA25EAFAE6008CC03B /* MiniPlayer.swift in Sources */,
 				B36D4DF825E6F6860050D7A6 /* PlayerTransitionApp.swift in Sources */,
+				B3244D2625F39E270096A820 /* VideoPlayerViewModel.swift in Sources */,
 				B36D4E1625E713410050D7A6 /* VideoCardView.swift in Sources */,
 				B3955BAD25EAFB38008CC03B /* VideoPlayerView.swift in Sources */,
 			);

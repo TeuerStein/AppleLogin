@@ -38,7 +38,7 @@ struct MiniPlayer: View {
                         HStack {
                             PlayBackVideoButtons(image: "hand.thumbsup", text: "123K")
                             
-                            PlayBackVideoButtons(image: "hand.thumbsdown", text: "1K")
+                            PlayBackVideoButtons(image: "hand.thumbsdown", text: "12K")
                             
                             PlayBackVideoButtons(image: "square.and.arrow.up", text: "Share")
                             
@@ -58,6 +58,7 @@ struct MiniPlayer: View {
                                 VideoCardView(video: video)
                             }
                         }
+                        .padding(.horizontal, -10)
                     }
                     .padding()
                 }
@@ -91,7 +92,7 @@ struct PlayBackVideoButtons: View {
                 
                 Text(text)
                     .fontWeight(.semibold)
-                    .font(.caption)
+                    .font(Font.system(size:10))
             }
         })
         .foregroundColor(.black)

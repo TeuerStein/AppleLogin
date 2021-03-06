@@ -40,7 +40,7 @@ struct VideoCardView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
-        .padding(.horizontal)
+        .padding(.horizontal, 8)
     }
 }
 
