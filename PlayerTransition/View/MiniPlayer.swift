@@ -19,10 +19,13 @@ struct MiniPlayer: View {
             // Video Player
             // There is a bug with URL path for video player
             // For that I use an Image
-            Image("video")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: getFrame())
+            HStack {
+                Image("video")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: player.width, height: getFrame())
+            }
+            .frame(maxWidth: .infinity, maxHeight: getFrame(), alignment: .leading)
             
             GeometryReader { geometry in
                 ScrollView {
@@ -87,7 +90,22 @@ struct MiniPlayer: View {
     func getFrame() -> CGFloat {
         let progress = player.offset / (height - 100)
         
-        print(progress)
+        if (1 - progress) <= 1.0 {
+            let videoHeight: CGFloat = (1 - progress) * 230
+            
+            // Stopping height at 70
+            if videoHeight <= 70 {
+                // Decresing width
+                let percent = videoHeight / 70
+                let videoWidth: CGFloat = percent * UIScreen.main.bounds.width
+                DispatchQueue.main.async {
+                    player.width = videoWidth
+                }
+                return 70
+            }
+            
+            return videoHeight
+        }
         
         return 230
     }
