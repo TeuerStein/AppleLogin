@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct MiniPlayer: View {
+    
+    // ScreenHeight
+    @State var height: CGFloat = 0
+    @EnvironmentObject var player: VideoPlayerViewModel
+    
     var body: some View {
         VStack {
             
@@ -17,6 +22,7 @@ struct MiniPlayer: View {
             Image("video")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .frame(height: getFrame())
             
             GeometryReader { geometry in
                 ScrollView {
@@ -62,6 +68,9 @@ struct MiniPlayer: View {
                     }
                     .padding()
                 }
+                .onAppear(perform: {
+                    self.height = geometry.frame(in: .global).height + 250
+                })
             }
             
             Spacer(minLength: 0)
@@ -71,6 +80,20 @@ struct MiniPlayer: View {
             Color.white
                 .ignoresSafeArea(.all, edges: .all)
         )
+    }
+    
+    // Getting frame and opacity while dragging
+    
+    func getFrame() -> CGFloat {
+        let progress = player.offset / (height - 100)
+        
+        print(progress)
+        
+        return 230
+    }
+    
+    func getOpacity() {
+        
     }
 }
 

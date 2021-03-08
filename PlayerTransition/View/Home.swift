@@ -44,10 +44,15 @@ struct Home: View {
         .onChange(of: gestureOffset, perform: { value in
             onChanged()
         })
+        // Setting environment obj
+        .environmentObject(player)
+        
     }
     
     func onChanged() {
-        player.offset = gestureOffset
+        if player.offset >= 0 && !player.isMiniPlayer {
+            player.offset = gestureOffset
+        }
     }
 
     func onEnd(value: DragGesture.Value) {
