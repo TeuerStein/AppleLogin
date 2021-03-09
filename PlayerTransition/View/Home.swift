@@ -50,14 +50,23 @@ struct Home: View {
     }
     
     func onChanged() {
-        if player.offset >= 0 && !player.isMiniPlayer {
+        if gestureOffset > 0 && !player.isMiniPlayer {
             player.offset = gestureOffset
         }
     }
 
     func onEnd(value: DragGesture.Value) {
         withAnimation(.default) {
-            player.offset = 0
+            if !player.isMiniPlayer {
+                player.offset = 0
+
+                // Closing view
+                if value.translation.height > UIScreen.main.bounds.height / 3 {
+                    player.isMiniPlayer = true
+                } else {
+                    player.isMiniPlayer = false
+                }
+            }
         }
     }
 }

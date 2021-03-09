@@ -23,9 +23,9 @@ struct MiniPlayer: View {
                 Image("video")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: player.width, height: getFrame())
+                    .frame(width: player.isMiniPlayer ? 150 : player.width, height: player.isMiniPlayer ? 70 : getFrame())
             }
-            .frame(maxWidth: .infinity, maxHeight: getFrame(), alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
             
             GeometryReader { geometry in
                 ScrollView {
@@ -72,12 +72,17 @@ struct MiniPlayer: View {
                     .padding()
                 }
                 .onAppear(perform: {
-                    self.height = geometry.frame(in: .global).height + 250
+                    self.height = geometry.frame(in: .global).height + 230
                 })
             }
+            .background(Color.white)
+            .opacity(player.isMiniPlayer ? 0 : getOpacity())
+            .frame(height: player.isMiniPlayer ? 0 : nil)
             
             Spacer(minLength: 0)
         }
+        .frame(width: .infinity, height: player.isMiniPlayer ? 70 : abs(UIScreen.main.bounds.height))
+        .padding(.top, player.isMiniPlayer ? 10 : 0)
         .edgesIgnoringSafeArea(.all)
         .background(
             Color.white
@@ -99,9 +104,18 @@ struct MiniPlayer: View {
                 let percent = videoHeight / 70
                 let videoWidth: CGFloat = percent * UIScreen.main.bounds.width
                 DispatchQueue.main.async {
-                    player.width = videoWidth
+                    // Stopping at 150
+                    if videoWidth >= 150 {
+                        player.width = videoWidth
+
+                    }
                 }
                 return 70
+            }
+            
+            // Preview WILL have animation problems
+            DispatchQueue.main.async {
+                player.width = UIScreen.main.bounds.width
             }
             
             return videoHeight
@@ -110,8 +124,14 @@ struct MiniPlayer: View {
         return 230
     }
     
-    func getOpacity() {
+    func getOpacity() -> Double {
+        let progress = player.offset / (height - 100)
         
+        if progress <= 1 {
+            return Double(1 - progress)
+        }
+        
+        return 1
     }
 }
 
